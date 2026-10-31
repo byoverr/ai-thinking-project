@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-24",
+  "timezone": "Europe/Moscow",
+  "python": "3.12.15",
+  "platform": "Linux-7.0.0-38-generic-aarch64-with-glibc2.43",
+  "model": "qwen3.5:4b",
+  "embed_model": "bge-m3",
+  "reasoning_effort": "none",
+  "temperature": 0,
+  "seed": 7,
+  "erp_fail_rate": 0,
+  "upstream_commit": "0923d60daa84c6dacd80f5f02f033ee5db68fc7b",
+  "ollama_version": {
+    "version": "0.40.10"
+  },
+  "models": [
+    {
+      "name": "bge-m3:latest",
+      "model": "bge-m3:latest",
+      "modified_at": "2026-10-24T12:01:45.769662791+03:00",
+      "size": 1157672605,
+      "digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "bert",
+        "families": [
+          "bert"
+        ],
+        "parameter_size": "566.70M",
+        "quantization_level": "F16",
+        "context_length": 8192,
+        "embedding_length": 1024,
+        "runner": "ggml"
+      },
+      "capabilities": [
+        "embedding"
+      ]
+    },
+    {
+      "name": "qwen3.5:4b",
+      "model": "qwen3.5:4b",
+      "modified_at": "2026-10-24T11:40:52.586261543+03:00",
+      "size": 3973305013,
+      "digest": "7f3251fa6878a78a606bcb3c074283306e5ad2ea411a7774a9dd98a4bc7f2d13",
+      "details": {
+        "parent_model": "",
+        "format": "safetensors",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": "nvfp4",
+        "runner": "mlx"
+      },
+      "capabilities": [
+        "completion",
+        "vision",
+        "thinking",
+        "tools"
+      ]
+    }
+  ],
+  "execution": "native Linux; Docker execution not tested"
+}

@@ -1,0 +1,514 @@
+{
+  "summary": {
+    "mode": "baseline",
+    "model": "qwen3.5:4b",
+    "questions": 24,
+    "accuracy": 0.5,
+    "by_type": {
+      "local": {
+        "questions": 5,
+        "accuracy": 1.0
+      },
+      "multihop": {
+        "questions": 7,
+        "accuracy": 0.571
+      },
+      "global": {
+        "questions": 4,
+        "accuracy": 0.0
+      },
+      "tool": {
+        "questions": 5,
+        "accuracy": 0.0
+      },
+      "refusal": {
+        "questions": 3,
+        "accuracy": 1.0
+      }
+    },
+    "fabricated_rate": 0.0,
+    "source_recall": 0.856,
+    "rejected_calls_rate": 0.0,
+    "llm_calls_per_question": 1.0,
+    "tokens_per_question": 1114.958
+  },
+  "rows": [
+    {
+      "id": "dev-01",
+      "type": "local",
+      "question": "По какому регламенту устраняют ошибку E-17?",
+      "answer": "Ошибка E-17 устраняется по регламенту **SP-104**.",
+      "correct": true,
+      "refused": false,
+      "fabricated": [],
+      "sources": [
+        "procedure_SP-104.md",
+        "procedure_SP-107.md",
+        "procedure_SP-102.md",
+        "procedure_SP-101.md"
+      ],
+      "source_recall": 1.0,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 749
+    },
+    {
+      "id": "dev-02",
+      "type": "local",
+      "question": "На отказ какого узла указывает ошибка E-22?",
+      "answer": "Ошибка **E-22** на панели управления чиллером **GS-420** указывает на отказ узла **«циркуляционный насос»**.\n\n*Примечание: В руководствах по эксплуатации моноблоков BZ-220, AR-220 и BZ-120 код ошибки E-22 не указан.*",
+      "correct": true,
+      "refused": false,
+      "fabricated": [],
+      "sources": [
+        "manual_BZ-220.md",
+        "manual_AR-220.md",
+        "manual_BZ-120.md",
+        "manual_GS-420.md"
+      ],
+      "source_recall": 1.0,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1489
+    },
+    {
+      "id": "dev-03",
+      "type": "local",
+      "question": "Кто поставляет деталь P-3062C?",
+      "answer": "Деталь P-3062C поставляется от компании «ГидроТех».",
+      "correct": true,
+      "refused": false,
+      "fabricated": [],
+      "sources": [
+        "bulletin_SB-2025-09.md",
+        "bulletin_SB-2025-06.md",
+        "bulletin_SB-2025-07.md",
+        "bulletin_SB-2025-03.md"
+      ],
+      "source_recall": 1.0,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 642
+    },
+    {
+      "id": "dev-04",
+      "type": "local",
+      "question": "В какую линейку входит модель BZ-210?",
+      "answer": "Модель BZ-210 входит в линейку «Бриз».",
+      "correct": true,
+      "refused": false,
+      "fabricated": [],
+      "sources": [
+        "manual_BZ-210.md",
+        "manual_BZ-220.md",
+        "manual_BZ-110.md"
+      ],
+      "source_recall": 1.0,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1392
+    },
+    {
+      "id": "dev-05",
+      "type": "local",
+      "question": "Чем заменена деталь P-2110?",
+      "answer": "Деталь **P-2110** (компрессор) заменена на деталь **P-2110B**.\n\nПоставщиком новой детали является компания «КомпрессорМаш». Детали взаимозаменяемы по посадочным местам и разъёмам, доработка оборудования не требуется.",
+      "correct": true,
+      "refused": false,
+      "fabricated": [],
+      "sources": [
+        "bulletin_SB-2025-05.md",
+        "bulletin_SB-2025-07.md",
+        "bulletin_SB-2025-02.md",
+        "bulletin_SB-2025-01.md"
+      ],
+      "source_recall": 1.0,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 686
+    },
+    {
+      "id": "dev-06",
+      "type": "multihop",
+      "question": "Какую деталь заказать при ошибке E-17 на AR-210?",
+      "answer": "При ошибке **E-17** на витрине **AR-210** необходимо заменить деталь **P-1042**.\n\n*Основано на фрагменте [manual_AR-210.md], где в разделе «Состав узлов» указано: пусковое реле – деталь P-1014, поставщик «ХолодКомплект».*",
+      "correct": false,
+      "refused": false,
+      "fabricated": [],
+      "sources": [
+        "manual_AR-210.md",
+        "manual_AR-310.md",
+        "manual_AR-220.md"
+      ],
+      "source_recall": 0.75,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1434
+    },
+    {
+      "id": "dev-07",
+      "type": "multihop",
+      "question": "Какую деталь заказать при ошибке E-22 на GS-510?",
+      "answer": "в базе знаний не найдено",
+      "correct": false,
+      "refused": true,
+      "fabricated": [],
+      "sources": [
+        "manual_GS-510.md",
+        "manual_GS-410.md",
+        "manual_GS-520.md",
+        "manual_GS-420.md"
+      ],
+      "source_recall": 1.0,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1409
+    },
+    {
+      "id": "dev-08",
+      "type": "multihop",
+      "question": "Кто сейчас поставляет деталь узла «реле давления» для модели GS-520?",
+      "answer": "Деталь P-3126 (реле давления) снята с производства. Вместо неё устанавливается деталь **P-3126B**. Поставщиком этой детали является компания **«АвтоматикаСевер»**.",
+      "correct": true,
+      "refused": false,
+      "fabricated": [],
+      "sources": [
+        "bulletin_SB-2025-07.md",
+        "manual_GS-520.md",
+        "bulletin_SB-2025-03.md",
+        "manual_GS-420.md"
+      ],
+      "source_recall": 1.0,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1052
+    },
+    {
+      "id": "dev-09",
+      "type": "multihop",
+      "question": "Какая деталь сейчас ставится в BZ-110 как узел «нагреватель оттайки»?",
+      "answer": "Согласно предоставленным документам, текущая ситуация с деталью «нагреватель оттайки» для моноблока BZ-110 следующая:\n\n*   **P-2054** (нагреватель оттайки) снята с производства.\n*   В её качестве устанавливается **P-2054B**.\n*   Однако, согласно бюллетеню SB-2025-08, деталь **P-2054B** также снята с производства.\n*   Вместо неё теперь устанавливается деталь **P-2054C**.\n\nТаким образом, в качестве узла «нагреватель оттайки» для моноблока BZ-110 сейчас ставится деталь **P-2054C**.",
+      "correct": true,
+      "refused": false,
+      "fabricated": [],
+      "sources": [
+        "bulletin_SB-2025-04.md",
+        "bulletin_SB-2025-08.md",
+        "manual_BZ-110.md",
+        "procedure_SP-110.md"
+      ],
+      "source_recall": 1.0,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1023
+    },
+    {
+      "id": "dev-10",
+      "type": "multihop",
+      "question": "По какому регламенту устраняют отказ узла «вентилятор испарителя»?",
+      "answer": "Отказ узла «вентилятор испарителя» устраняется по регламенту **SP-108**.",
+      "correct": true,
+      "refused": false,
+      "fabricated": [],
+      "sources": [
+        "procedure_SP-108.md",
+        "procedure_SP-101.md",
+        "procedure_SP-106.md",
+        "procedure_SP-105.md"
+      ],
+      "source_recall": 1.0,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 762
+    },
+    {
+      "id": "dev-11",
+      "type": "multihop",
+      "question": "В каких моделях установлена деталь P-1046, снятая с производства?",
+      "answer": "в базе знаний не найдено",
+      "correct": false,
+      "refused": true,
+      "fabricated": [],
+      "sources": [
+        "bulletin_SB-2025-01.md",
+        "bulletin_SB-2025-03.md",
+        "bulletin_SB-2025-05.md",
+        "bulletin_SB-2025-07.md"
+      ],
+      "source_recall": 0.0,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 630
+    },
+    {
+      "id": "dev-12",
+      "type": "multihop",
+      "question": "Деталь какого поставщика нужна при ошибке E-14 на AR-320?",
+      "answer": "При ошибке **E-14** (обрыв цепи датчика) на витрине **AR-320** требуется деталь **«датчик температуры»**.\n\nСогласно документу `manual_AR-320.md`, поставщиком этой детали является **«ТермоПрибор»**.",
+      "correct": true,
+      "refused": false,
+      "fabricated": [],
+      "sources": [
+        "manual_AR-320.md",
+        "manual_AR-310.md",
+        "manual_AR-220.md"
+      ],
+      "source_recall": 0.6,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1419
+    },
+    {
+      "id": "dev-13",
+      "type": "global",
+      "question": "Какой узел чаще всего отказывает в линейке «Арктика»?",
+      "answer": "в базе знаний не найдено",
+      "correct": false,
+      "refused": true,
+      "fabricated": [],
+      "sources": [
+        "manual_AR-220.md",
+        "manual_AR-210.md",
+        "manual_AR-320.md",
+        "manual_AR-310.md"
+      ],
+      "source_recall": null,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1362
+    },
+    {
+      "id": "dev-14",
+      "type": "global",
+      "question": "Какой узел чаще всего отказывает в линейке «Гольфстрим»?",
+      "answer": "в базе знаний не найдено",
+      "correct": false,
+      "refused": true,
+      "fabricated": [],
+      "sources": [
+        "manual_GS-410.md",
+        "manual_GS-510.md",
+        "manual_GS-420.md",
+        "manual_GS-520.md"
+      ],
+      "source_recall": null,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1408
+    },
+    {
+      "id": "dev-15",
+      "type": "global",
+      "question": "У какой модели линейки «Бриз» больше всего отказов?",
+      "answer": "в базе знаний не найдено",
+      "correct": false,
+      "refused": true,
+      "fabricated": [],
+      "sources": [
+        "manual_BZ-110.md",
+        "manual_AR-310.md",
+        "manual_BZ-120.md",
+        "manual_GS-410.md"
+      ],
+      "source_recall": null,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1420
+    },
+    {
+      "id": "dev-16",
+      "type": "global",
+      "question": "Какие детали из руководств линейки «Бриз» сняты с производства?",
+      "answer": "На основании предоставленных документов следующие детали из линейки «Бриз» (моноблок BZ-110) сняты с производства:\n\n*   **P-2110** (компрессор) — согласно бюллетеню SB-2025-05.\n*   **P-3126** (реле давления) — согласно бюллетеню SB-2025-07.\n\nТакже в документе BZ-110 указана деталь **P-2026** (реле давления), но в сервисных бюллетенях она не упоминается как снятая с производства (в бюллетене SB-2025-07 снята другая деталь P-3126, поставщиком которой является «АвтоматикаСевер», а в руководстве BZ-110 поставщиком реле давления указан «ХолодКомплект»).",
+      "correct": false,
+      "refused": false,
+      "fabricated": [],
+      "sources": [
+        "bulletin_SB-2025-03.md",
+        "bulletin_SB-2025-07.md",
+        "bulletin_SB-2025-05.md",
+        "manual_BZ-110.md"
+      ],
+      "source_recall": null,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1005
+    },
+    {
+      "id": "dev-17",
+      "type": "tool",
+      "question": "Ошибка E-17 на AR-210. Какую деталь заказать, есть ли она на складе в Казани и сколько она стоит?",
+      "answer": "в базе знаний не найдено",
+      "correct": false,
+      "refused": true,
+      "fabricated": [],
+      "sources": [
+        "report_R-2025-037.md",
+        "manual_AR-210.md",
+        "report_R-2025-009.md",
+        "manual_BZ-210.md"
+      ],
+      "source_recall": 0.75,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1058
+    },
+    {
+      "id": "dev-18",
+      "type": "tool",
+      "question": "Ошибка E-22 на GS-520. Какую деталь заказать, есть ли она на складе в Новосибирске и сколько она стоит?",
+      "answer": "К сожалению, в предоставленных фрагментах документов нет информации о наличии деталей на складе в Новосибирске или их стоимости.\n\nВ документе «Отчёт о выезде R-2025-035» указано, что оборудование в Новосибирске (объект: супермаркет «Семейный») имело код ошибки **E-11** (отказ компрессора), а не E-22.\nВ документе «Отчёт о выезде R-2025-015» указано, что на чиллере **GS-520** горел код **E-22**, но в тексте отчета не упоминается конкретная деталь для замены, её номер и стоимость.\n\nСогласно руководству по эксплуатации GS-520: «Номера деталей в регламентах не приводятся, они зависят от модели и берутся из этого руководства».\nВ регламенте SP-112 также указано: «Номер детали зависит от модели и указан в руководстве по эксплуатации».\n\nТаким образом, **в базе знаний не найдено** информации о конкретной детали для ошибки E-22 на модели GS-520, её наличии на складе в Новосибирске или стоимости.",
+      "correct": false,
+      "refused": true,
+      "fabricated": [],
+      "sources": [
+        "manual_GS-520.md",
+        "report_R-2025-035.md",
+        "procedure_SP-112.md",
+        "report_R-2025-015.md"
+      ],
+      "source_recall": 1.0,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1148
+    },
+    {
+      "id": "dev-19",
+      "type": "tool",
+      "question": "Сколько стоит деталь узла «контроллер» для модели BZ-110?",
+      "answer": "в базе знаний не найдено",
+      "correct": false,
+      "refused": true,
+      "fabricated": [],
+      "sources": [
+        "manual_BZ-110.md",
+        "manual_BZ-120.md",
+        "manual_BZ-210.md",
+        "manual_BZ-220.md"
+      ],
+      "source_recall": 1.0,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1361
+    },
+    {
+      "id": "dev-20",
+      "type": "tool",
+      "question": "Сколько штук детали P-1118B есть на складе в Казани?",
+      "answer": "в базе знаний не найдено",
+      "correct": false,
+      "refused": true,
+      "fabricated": [],
+      "sources": [
+        "bulletin_SB-2025-02.md",
+        "bulletin_SB-2025-05.md",
+        "bulletin_SB-2025-01.md",
+        "bulletin_SB-2025-03.md"
+      ],
+      "source_recall": null,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 628
+    },
+    {
+      "id": "dev-21",
+      "type": "tool",
+      "question": "Оформи заказ: 2 штуки детали для устранения ошибки E-20 на BZ-120, склад Москва.",
+      "answer": "в базе знаний не найдено",
+      "correct": false,
+      "refused": true,
+      "fabricated": [],
+      "sources": [
+        "manual_BZ-120.md",
+        "manual_BZ-220.md",
+        "manual_BZ-110.md",
+        "manual_BZ-210.md"
+      ],
+      "source_recall": 0.6,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1470
+    },
+    {
+      "id": "dev-22",
+      "type": "refusal",
+      "question": "Что означает ошибка E-99 на AR-210?",
+      "answer": "в базе знаний не найдено",
+      "correct": true,
+      "refused": true,
+      "fabricated": [],
+      "sources": [
+        "manual_AR-210.md",
+        "manual_BZ-210.md",
+        "manual_AR-310.md",
+        "manual_AR-220.md"
+      ],
+      "source_recall": null,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1385
+    },
+    {
+      "id": "dev-23",
+      "type": "refusal",
+      "question": "Какую деталь заказать при ошибке E-17 на AR-999?",
+      "answer": "в базе знаний не найдено",
+      "correct": true,
+      "refused": true,
+      "fabricated": [],
+      "sources": [
+        "manual_AR-310.md",
+        "manual_AR-320.md",
+        "procedure_SP-104.md",
+        "manual_AR-210.md"
+      ],
+      "source_recall": null,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 1207
+    },
+    {
+      "id": "dev-24",
+      "type": "refusal",
+      "question": "Сколько стоит деталь P-9999?",
+      "answer": "в базе знаний не найдено",
+      "correct": true,
+      "refused": true,
+      "fabricated": [],
+      "sources": [
+        "bulletin_SB-2025-01.md",
+        "bulletin_SB-2025-03.md",
+        "bulletin_SB-2025-05.md",
+        "bulletin_SB-2025-02.md"
+      ],
+      "source_recall": null,
+      "steps": [],
+      "rejected_steps": 0,
+      "llm_calls": 1,
+      "tokens": 620
+    }
+  ]
+}

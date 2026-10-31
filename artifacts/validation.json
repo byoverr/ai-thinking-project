@@ -1,0 +1,12 @@
+{
+  "tests_passed": 168,
+  "lint": true,
+  "original_infrastructure_unchanged": true,
+  "commands": [
+    "make test RUN=\"uv run\" ARGS=\"tests erp/tests src/assistant/agent/tests src/assistant/graphrag/tests\"",
+    "make lint RUN=\"uv run\"",
+    "make index RUN=\"uv run\"",
+    "make eval-all RUN=\"uv run\"",
+    "make eval-extraction RUN=\"uv run\""
+  ]
+}

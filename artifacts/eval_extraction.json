@@ -1,0 +1,16 @@
+{
+  "relations": {
+    "precision": 1.0,
+    "recall": 0.87,
+    "found": 142,
+    "gold": 161
+  },
+  "entities": {
+    "precision": 1.0,
+    "recall": 0.976,
+    "found": 163,
+    "gold": 165
+  },
+  "dropped": 16,
+  "documents": 16
+}

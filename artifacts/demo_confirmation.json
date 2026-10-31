@@ -1,0 +1,75 @@
+{
+  "question": "Оформи заказ: 2 штуки детали для устранения ошибки E-20 на BZ-120, склад Москва.",
+  "answer": "Подтверди заказ: P-2054C, 2 шт., склад Москва, модель BZ-120.",
+  "sources": [
+    "bulletin_SB-2025-04.md",
+    "bulletin_SB-2025-08.md",
+    "manual_BZ-110.md",
+    "manual_BZ-120.md",
+    "manual_BZ-210.md",
+    "manual_BZ-220.md",
+    "procedure_SP-110.md",
+    "report_R-2025-004.md",
+    "report_R-2025-033.md"
+  ],
+  "refused": false,
+  "needs_confirmation": true,
+  "pending_action": {
+    "tool": "create_service_order",
+    "args": {
+      "part_id": "P-2054C",
+      "warehouse": "Москва",
+      "qty": 2,
+      "model": "BZ-120"
+    }
+  },
+  "steps": [
+    {
+      "tool": "search_knowledge",
+      "args": {
+        "question": "Ошибка E-20 модель BZ-120 деталь замена"
+      },
+      "result": {
+        "answer": "Для устранения ошибки E-20 в модели BZ-120 требуется деталь **P-2054C** (замена на последней стадии цепочки: P-2054 → P-2054B → P-2054C).",
+        "facts": [
+          "P-2054 -REPLACED_BY-> P-2054B",
+          "P-2054B -REPLACED_BY-> P-2054C",
+          "E-20 -INDICATES-> нагреватель оттайки",
+          "BZ-120 -FAILED-> нагреватель оттайки",
+          "BZ-120 -HAS_PART-> P-2054",
+          "P-2054 -IS_A-> нагреватель оттайки"
+        ],
+        "sources": [
+          "bulletin_SB-2025-04.md",
+          "bulletin_SB-2025-08.md",
+          "manual_BZ-110.md",
+          "manual_BZ-120.md",
+          "manual_BZ-210.md",
+          "manual_BZ-220.md",
+          "procedure_SP-110.md",
+          "report_R-2025-004.md",
+          "report_R-2025-033.md"
+        ],
+        "refused": false
+      },
+      "error": null
+    },
+    {
+      "tool": "create_service_order",
+      "args": {
+        "part_id": "P-2054C",
+        "warehouse": "Москва",
+        "qty": 2,
+        "model": "BZ-120"
+      },
+      "result": {
+        "status": "pending_confirmation",
+        "part_id": "P-2054C",
+        "warehouse": "Москва",
+        "qty": 2,
+        "model": "BZ-120"
+      },
+      "error": "Требуется подтверждение пользователя."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "answer": "Цена детали P-1042B (пусковое реле) составляет **2630 рублей**. Деталь не снята с производства.",
+  "steps": [
+    {
+      "tool": "get_price",
+      "args": {
+        "part_id": "P-1042B"
+      },
+      "result": {
+        "part_id": "P-1042B",
+        "name": "пусковое реле",
+        "price_rub": 2630,
+        "discontinued": false
+      },
+      "error": null
+    }
+  ],
+  "sources": [],
+  "refused": false,
+  "needs_confirmation": false,
+  "pending_action": null
+}

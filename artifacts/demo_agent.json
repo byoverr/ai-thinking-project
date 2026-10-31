@@ -1,0 +1,88 @@
+{
+  "question": "Ошибка E-17 на AR-210. Какую деталь заказать, есть ли она на складе в Казани и сколько она стоит?",
+  "text": "Для модели AR-210 при ошибке E-17 (отказ узла пусковое реле) актуальной деталью для заказа является **P-1042B**.\n\n**Подтвержденные факты:**\n*   **Наличие на складе в Казани:** Есть, остаток 3 шт.\n*   **Цена:** 2630 рублей.\n\nКоличество детали не было указано в запросе, поэтому я его не могу подтвердить. Укажите желаемое количество, и я оформлю заказ.",
+  "sources": [
+    "bulletin_SB-2025-03.md",
+    "manual_AR-210.md",
+    "manual_AR-220.md",
+    "manual_AR-310.md",
+    "manual_AR-320.md",
+    "procedure_SP-104.md",
+    "report_R-2025-003.md",
+    "report_R-2025-010.md",
+    "report_R-2025-012.md",
+    "report_R-2025-023.md",
+    "report_R-2025-028.md",
+    "report_R-2025-034.md",
+    "report_R-2025-036.md",
+    "report_R-2025-037.md",
+    "report_R-2025-039.md"
+  ],
+  "refused": false,
+  "steps": [
+    {
+      "tool": "search_knowledge",
+      "args": {
+        "question": "Ошибка E-17 на модели AR-210: номер детали, цепочка замен, наличие на складе в Казани, цена."
+      },
+      "result": {
+        "answer": "P-1042 заменена на P-1042B.\nE-17 указывает на отказ узла пусковое реле.\nAR-210 — зафиксирован отказ узла пусковое реле.\nAR-210 содержит деталь P-1042.\nP-1042 — узел пусковое реле.\nАктуальные детали в конце цепочек замен: P-1042B.",
+        "facts": [
+          "P-1042 -REPLACED_BY-> P-1042B",
+          "E-17 -INDICATES-> пусковое реле",
+          "AR-210 -FAILED-> пусковое реле",
+          "AR-210 -HAS_PART-> P-1042",
+          "P-1042 -IS_A-> пусковое реле"
+        ],
+        "sources": [
+          "bulletin_SB-2025-03.md",
+          "manual_AR-210.md",
+          "manual_AR-220.md",
+          "manual_AR-310.md",
+          "manual_AR-320.md",
+          "procedure_SP-104.md",
+          "report_R-2025-003.md",
+          "report_R-2025-010.md",
+          "report_R-2025-012.md",
+          "report_R-2025-023.md",
+          "report_R-2025-028.md",
+          "report_R-2025-034.md",
+          "report_R-2025-036.md",
+          "report_R-2025-037.md",
+          "report_R-2025-039.md"
+        ],
+        "refused": false
+      },
+      "error": null
+    },
+    {
+      "tool": "check_stock",
+      "args": {
+        "part_id": "P-1042B",
+        "warehouse": "Казань"
+      },
+      "result": {
+        "part_id": "P-1042B",
+        "warehouse": "Казань",
+        "qty": 3,
+        "discontinued": false
+      },
+      "error": null
+    },
+    {
+      "tool": "get_price",
+      "args": {
+        "part_id": "P-1042B"
+      },
+      "result": {
+        "part_id": "P-1042B",
+        "name": "пусковое реле",
+        "price_rub": 2630,
+        "discontinued": false
+      },
+      "error": null
+    }
+  ],
+  "needs_confirmation": false,
+  "pending_action": null
+}
