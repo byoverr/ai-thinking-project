@@ -1,0 +1,883 @@
+{
+  "dropped_entities": 1,
+  "dropped_relations": 17,
+  "empty_chunks": 4,
+  "malformed_chunks": 0,
+  "rows": [
+    {
+      "chunk_id": "bulletin_SB-2025-01.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "bulletin_SB-2025-02.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "bulletin_SB-2025-03.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "bulletin_SB-2025-04.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "bulletin_SB-2025-05.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "bulletin_SB-2025-06.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "bulletin_SB-2025-07.md#0",
+      "entities": 4,
+      "relations": 3,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "bulletin_SB-2025-08.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "bulletin_SB-2025-09.md#0",
+      "entities": 4,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "bulletin_SB-2025-10.md#0",
+      "entities": 2,
+      "relations": 0,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_AR-210.md#0",
+      "entities": 23,
+      "relations": 25,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_AR-210.md#1",
+      "entities": 18,
+      "relations": 10,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_AR-220.md#0",
+      "entities": 23,
+      "relations": 25,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_AR-220.md#1",
+      "entities": 18,
+      "relations": 10,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_AR-310.md#0",
+      "entities": 23,
+      "relations": 25,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_AR-310.md#1",
+      "entities": 20,
+      "relations": 11,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_AR-320.md#0",
+      "entities": 23,
+      "relations": 25,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_AR-320.md#1",
+      "entities": 20,
+      "relations": 11,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_BZ-110.md#0",
+      "entities": 23,
+      "relations": 17,
+      "dropped_entities": 0,
+      "dropped_relations": 8,
+      "rejected_relations": [
+        {
+          "subject_type": "Part",
+          "subject": "P-2010",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "BZ-110",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-2014",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "BZ-110",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-2018",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "BZ-110",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-2022",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "BZ-110",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-2026",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "BZ-110",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-2046",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "BZ-110",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-2054",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "BZ-110",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-2058",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "BZ-110",
+          "reason": "Типы или направление связи нарушают схему"
+        }
+      ]
+    },
+    {
+      "chunk_id": "manual_BZ-110.md#1",
+      "entities": 18,
+      "relations": 10,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_BZ-120.md#0",
+      "entities": 23,
+      "relations": 25,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_BZ-120.md#1",
+      "entities": 20,
+      "relations": 11,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_BZ-210.md#0",
+      "entities": 23,
+      "relations": 25,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_BZ-210.md#1",
+      "entities": 20,
+      "relations": 11,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_BZ-220.md#0",
+      "entities": 23,
+      "relations": 25,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_BZ-220.md#1",
+      "entities": 20,
+      "relations": 11,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_GS-410.md#0",
+      "entities": 24,
+      "relations": 17,
+      "dropped_entities": 0,
+      "dropped_relations": 8,
+      "rejected_relations": [
+        {
+          "subject_type": "Part",
+          "subject": "P-3010",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "GS-410",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-3014",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "GS-410",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-3018",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "GS-410",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-3022",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "GS-410",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-3026",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "GS-410",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-3062",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "GS-410",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-3058",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "GS-410",
+          "reason": "Типы или направление связи нарушают схему"
+        },
+        {
+          "subject_type": "Part",
+          "subject": "P-3066",
+          "type": "HAS_PART",
+          "object_type": "Model",
+          "object": "GS-410",
+          "reason": "Типы или направление связи нарушают схему"
+        }
+      ]
+    },
+    {
+      "chunk_id": "manual_GS-410.md#1",
+      "entities": 18,
+      "relations": 10,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_GS-420.md#0",
+      "entities": 24,
+      "relations": 25,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_GS-420.md#1",
+      "entities": 18,
+      "relations": 10,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_GS-510.md#0",
+      "entities": 24,
+      "relations": 25,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_GS-510.md#1",
+      "entities": 18,
+      "relations": 10,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_GS-520.md#0",
+      "entities": 24,
+      "relations": 25,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "manual_GS-520.md#1",
+      "entities": 18,
+      "relations": 10,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-101.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-102.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-103.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-104.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-105.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-106.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-107.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-108.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-109.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-110.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-111.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-112.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-113.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-114.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-115.md#0",
+      "entities": 0,
+      "relations": 0,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-116.md#0",
+      "entities": 0,
+      "relations": 0,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-117.md#0",
+      "entities": 0,
+      "relations": 0,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "procedure_SP-118.md#0",
+      "entities": 0,
+      "relations": 0,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-001.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-002.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-003.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-004.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-005.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-006.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-007.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-008.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-009.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-010.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-011.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-012.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-013.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-014.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-015.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-016.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-017.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-018.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-019.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-020.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-021.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-022.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-023.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-024.md#0",
+      "entities": 1,
+      "relations": 0,
+      "dropped_entities": 1,
+      "dropped_relations": 1,
+      "rejected_relations": [
+        {
+          "subject_type": "Model",
+          "subject": "ВZ-2025-024",
+          "type": "FAILED",
+          "object_type": "Component",
+          "object": "нагреватель оттайки",
+          "reason": "Конец связи не подтверждён текстом или словарём"
+        }
+      ]
+    },
+    {
+      "chunk_id": "report_R-2025-025.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-026.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-027.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-028.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-029.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-030.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-031.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-032.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-033.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-034.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-035.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-036.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-037.md#0",
+      "entities": 4,
+      "relations": 3,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-038.md#0",
+      "entities": 2,
+      "relations": 1,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-039.md#0",
+      "entities": 4,
+      "relations": 3,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    },
+    {
+      "chunk_id": "report_R-2025-040.md#0",
+      "entities": 3,
+      "relations": 2,
+      "dropped_entities": 0,
+      "dropped_relations": 0,
+      "rejected_relations": []
+    }
+  ]
+}
