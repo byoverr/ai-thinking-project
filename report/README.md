@@ -6,7 +6,7 @@
 
 Нужен [tectonic](https://tectonic-typesetting.github.io/) (сам скачивает пакеты LaTeX при первом запуске) и шрифты PT Serif, PT Sans, PT Mono.
 
-Из корня репозитория:
+Из корня репозитория (или `make -C report`):
 
 ```bash
 tectonic -X compile report/REPORT.tex --outdir .
